@@ -61,32 +61,6 @@ main{
 .text-section h3{
   font-weight: 500;
 }
-
-.gender-section ,.gender-section div{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.gender-section{
-  height: 10%;
-  width: 90%;
-  justify-content: space-around;
-}
-
-.gender-section div{
-  height: 80%;
-  width: 40%;
-  border-radius: 0.5rem;
-}
-.gender-section div:first-child{
-  background-color: #246AFE;
-  color: white;
-}
-.gender-section div:last-child{
-  background-color: #FFFFFF;
-  color: #246AFE;
-}
 .metrics-section{
   height: 55%;
   width: 80%;
@@ -155,6 +129,15 @@ main{
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+}
+
+.age{
+  text-align: center;
+}
+
+.age p{
+  font-size: 0.75rem;
+  margin: 0;
 }
 
 .counter-buttons{
