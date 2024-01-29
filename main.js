@@ -7,6 +7,40 @@ let calculate = document.getElementById('calculate')
 let modalTitle = document.getElementsByClassName('modal-title')[0]
 let modalBody = document.getElementsByClassName('modal-body')[0]
 let details  = document.getElementById('details')
+let darkmode = document.getElementById('dark')
+let light = document.getElementById('light')
+let main = document.getElementsByTagName('main')[0]
+let darkmodetheme = document.getElementsByClassName('darkmode')
+let darkcollection = Array.from(darkmodetheme)
+document.body.style.background = '#D1D9E6'
+
+
+darkmode.addEventListener('click',()=>{
+    main.classList.add('dark-main')
+    darkcollection.forEach((ele)=>{
+        ele.style.background = '#373737'
+        ele.style.color = 'white'
+    })
+    weight.style.background='#373737'
+    weight.style.color='white'
+    darkmode.style.backgroundImage = "url('/Vector_dark_.svg')";
+    light.style.backgroundImage = "url('/Vector_dark.svg')";
+    document.body.style.background = '#525252'
+})
+
+light.addEventListener('click',()=>{
+    main.classList.remove('dark-main')
+    darkcollection.forEach((ele)=>{
+        ele.classList.remove('darkmode')
+        ele.style.background = 'white'
+        ele.style.color = 'black'
+    })
+    weight.style.background='white'
+    weight.style.color='black'
+    darkmode.style.backgroundImage = "url('/Vector_dark_light.svg')";
+    light.style.backgroundImage = "url('/Vector_light.svg')";
+    document.body.style.background = '#D1D9E6'
+})
 
 height.addEventListener('input', () => {
     let heightValue = height.value
