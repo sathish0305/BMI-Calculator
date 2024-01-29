@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,.theme-section, .theme-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  height: 100dvh;
+}
+
+main{
+  height: 99%;
+  width: 30%;
+  background: #D1D9E6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.theme-section{
+  height: 10%;
+  width: 100%;
+}
+
+.theme-container{
+  height: 50%;
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+}
+
+.light, .dark{
+  height: 50%;
+  width: 45%;
+  background-image: url('/Vector_light.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 50%;
+}
+
+.dark{
+  background-image: url('/Vector_dark_light.svg');
+}
+
+.text-section{
+  height: 12%;
+  width: 90%;
+}
+
+.text-section h3{
+  font-weight: 500;
+}
+
+.gender-section ,.gender-section div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gender-section{
+  height: 10%;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.gender-section div{
+  height: 80%;
+  width: 40%;
+  border-radius: 0.5rem;
+}
+.gender-section div:first-child{
+  background-color: #246AFE;
+  color: white;
+}
+.gender-section div:last-child{
+  background-color: #FFFFFF;
+  color: #246AFE;
+}
+.metrics-section{
+  height: 55%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.height-section, .age-weight-section{
+  height: 95%;
+  width: 45%;
+}
+
+.height-section{
+  background-color: #FFFFFF;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.age-weight-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.age-weight-section div{
+  width: 100%;
+  height: 45%;
+  background-color: #FFFFFF;
+  border-radius: 0.6rem;
+}
+
+.submit-section{
+  height: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-section button{
+  height: 80%;
+  width: 70%;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #246AFE;
+  color: #FFFFFF;
+}
+
+.range{
+  transform: rotate(270deg);
+  width: 15rem;
+  margin-top: 7rem;
+  border: 1px solid yellow;
+}
+
+.height-display{
+  margin-top: 7rem;
+}
+
+.age, .weight{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.counter-buttons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.counter-buttons button{
+  height: 70%;
+  width: 45%;
+  border: none;
+  background-color: #246AFE;
+  color: white;
+  border-radius: 9px;
+}
+
+.weight-display input:focus{
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  main{
+      height: 100%;
+      width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  main{
+    height: 100%;
+    width: 100%;
+}
+}
